@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <img src="/hd.jpg" alt="" srcset="/hd.jpg 3x /md.jpg 2x /xs.jpg 1x"/>
+    <img src="/hd.jpg" alt="" srcset="/hd.jpg 1920w /md.jpg 800w /xs.jpg 400w" 
+    sizes="(min-width: 1200px) 8vw, (min-width: 992px) 33vw, (min-width: 768px) 50vw, 10vw"/>
+    <picture>
+        <source srcset="/xs.jpg 400w" media="(max-width: 500px)">
+        <source srcset="/md.jpg 800w" media="(max-width: 900px)">
+        <source srcset="/hd.jpg" media="(max-width: 1200px)">
+        <img src="/hd.jpg" alt="">
+    </picture>
+</body>
+</html>

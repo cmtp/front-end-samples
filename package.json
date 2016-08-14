@@ -15,5 +15,8 @@
     "gulp-connect": "^5.0.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0"
+  },
+  "dependencies": {
+    "push.js": "0.0.10"
   }
 }

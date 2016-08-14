@@ -63,5 +63,5 @@ gulp.task('bower-css', function() {
 });
 /*tareas por defecto*/
 gulp.task('default',
-    ['bower-js', 'bower-css' , 'server', 'watch']
+    ['server', 'watch']
 );
