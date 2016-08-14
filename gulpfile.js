@@ -51,12 +51,17 @@ gulp.task('watch', function() {
     gulp.watch(['./app/**/*.html'], ['html']);
     gulp.watch(['./app/**/*.js'], ['js']);
 });
-/* Compilar y minificar archivos para colocar en produccion */
-gulp.task('build',
-          ['minify-html', 'minify-css', 'minify-js', 'bower-min-js', 'bower-min-css']
-         );
-
+/*mover librerias de bower al proyecto*/
+gulp.task('bower-js', function() {
+    gulp.src(lib.ext('js').files)
+    .pipe(gulp.dest('./app/lib/js'));
+});
+/*Mover Librerias de bower al proyecto*/
+gulp.task('bower-css', function() {
+    gulp.src(lib.ext('css').files)
+    .pipe(gulp.dest('./app/lib/css'));
+});
 /*tareas por defecto*/
 gulp.task('default',
-    ['bower-css', 'bower-js', 'server', 'watch']
+    ['bower-js', 'bower-css' , 'server', 'watch']
 );
