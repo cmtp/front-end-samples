@@ -4,7 +4,8 @@ function showNotification() {
         icon: 'https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-128.png',
         timeout: 4000,
         onClick: function () {
-            window.location = 'http://localhost:8085/pushjs/index.html';
+            // window.location = 'http://localhost:8085/pushjs/index.html';
+            window.focus();
             this.close();
         }
     });    

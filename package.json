@@ -17,6 +17,8 @@
     "gulp-sourcemaps": "^1.6.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
     "push.js": "0.0.10"
   }
 }
